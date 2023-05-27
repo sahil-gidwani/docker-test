@@ -20,4 +20,4 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - name: Push the Docker image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/test:$(date +%s)
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/test
